@@ -24,4 +24,13 @@ public class recentlyUsedListShould {
 		assertThat(rul.count(), is(2));
 	}
 
+	@Test
+	public void shouldReturnItemsAdded() {
+		RecentlyUsedList rul = new RecentlyUsedList();
+		rul.add("Hen");
+		rul.add("Javi");
+
+		assertThat(rul.get(0), is("Javi"));
+	}
+
 }
