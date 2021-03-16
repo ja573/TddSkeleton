@@ -6,6 +6,10 @@ public class RecentlyUsedList {
     }
 
     public Integer count() {
-        throw new UnsupportedOperationException();
+        return 0;
+    }
+
+    public void add(String toAdd) {
+        //
     }
 }

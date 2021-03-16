@@ -15,5 +15,13 @@ public class recentlyUsedListShould {
 		assertThat(rul.count(), is(0));
 	}
 
+	@Test
+	public void shouldBeNlongIfNAdded() {
+		RecentlyUsedList rul = new RecentlyUsedList();
+		rul.add("Hen");
+		assertThat(rul.count(), is(1));
+		rul.add("Javi");
+		assertThat(rul.count(), is(2));
+	}
 
 }
