@@ -31,6 +31,17 @@ public class recentlyUsedListShould {
 		rul.add("Javi");
 
 		assertThat(rul.get(0), is("Javi"));
+		assertThat(rul.get(1), is("Hen"));
 	}
 
+	@Test
+	public void shouldPromoteItemIfExists() {
+		RecentlyUsedList rul = new RecentlyUsedList();
+		rul.add("Hen");
+		rul.add("Javi");
+		rul.add("Hen");
+
+		assertThat(rul.get(0), is("Hen"));
+		assertThat(rul.count(), is(2));
+	}
 }

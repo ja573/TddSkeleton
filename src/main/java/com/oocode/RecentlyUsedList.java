@@ -15,7 +15,7 @@ public class RecentlyUsedList {
     }
 
     public void add(String toAdd) {
-        _recentlyUsed.add(toAdd);
+        _recentlyUsed.add(0, toAdd);
     }
 
     public String get(Integer index) {
