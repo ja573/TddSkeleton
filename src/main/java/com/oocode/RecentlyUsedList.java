@@ -19,6 +19,6 @@ public class RecentlyUsedList {
     }
 
     public String get(Integer index) {
-        throw new UnsupportedOperationException();
+        return _recentlyUsed.get(index);
     }
 }
