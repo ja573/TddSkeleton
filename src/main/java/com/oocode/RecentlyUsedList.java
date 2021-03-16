@@ -15,6 +15,10 @@ public class RecentlyUsedList {
     }
 
     public void add(String toAdd) {
+        int index = _recentlyUsed.indexOf(toAdd);
+        if (index != -1) {
+            _recentlyUsed.remove(index);
+        }
         _recentlyUsed.add(0, toAdd);
     }
 
